@@ -10,7 +10,7 @@ description: 使用 ego lite 对 Web 应用模块或官网执行探索测试和�
 ## 开始前
 
 1. 读取当前项目适用的 `AGENTS.md`、用户指定的需求和测试规范。用户明确指令优先；项目约束与本 Skill 存在冲突时遵循适用的更高优先级指令。不得把旧项目路径、字段或测试记录套用到当前模块。
-2. 从已有对话和文件复用地址、账号、环境、角色及授权；缺少完成测试所必需的信息时才询问，不重复追问。未确认是否为生产环境时先询问，在确认前按生产只读执行；其他可独立执行的检查继续进行。
+2. 从已有对话和文件复用地址、账号、环境、角色及授权；测试前确认环境性质和是否允许创建数据，不重复追问已有信息。用户指令明确为非生产环境时，默认允许创建测试数据；未确认环境性质或创建权限时询问，在确认前按生产只读执行，其他可独立执行的检查继续进行。
 3. 读取并使用可用的 `ego-browser` Skill，执行 `ego-browser skill` 并完整读取当前版本指南。浏览器操作只用 ego-browser，不另起浏览器或切换自动化工具。若该 Skill、CLI 或连接不可用，按其安装及故障指南诊断；不要静默切换工具或新建空间绕过故障。
 4. 根据任务类型读取参考文件：表单、列表或管理模块读 [references/module-testing.md](references/module-testing.md)；官网和展示站点读 [references/website-testing.md](references/website-testing.md)。所有任务读 [references/execution-and-reporting.md](references/execution-and-reporting.md)。
 
